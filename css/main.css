@@ -91,6 +91,117 @@ textarea {
    Helper classes
    ========================================================================== */
 
+/************ Header/Footer Layout Styles ************/
+
+header,
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+header .content-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header nav ul{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer .social-icons{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer .social-icons p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/****************** Homepage Main Layout Styles ******************/
+
+/* Hero Area */
+
+.hero {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+/* Aside Area */
+
+aside {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+/* Features Area */
+
+.features {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+/* Reviews Area */
+
+.reviews {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+/****************** About Page Main Layout Styles ******************/
+
+.mission {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+.contact-section {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+/****************** FAQ Page Main Layout Styles ******************/
+
+.faq {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+.faq .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
 /*
  * Hide visually and from screen readers
  */
