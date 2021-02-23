@@ -91,6 +91,11 @@ textarea {
    Helper classes
    ========================================================================== */
 
+.content-wrapper {
+  width: 90%;
+  margin: 50px 0;
+}
+
 /************ Header/Footer Layout Styles ************/
 
 header,
@@ -101,35 +106,61 @@ footer {
     flex-flow: row wrap;
 }
 
+header {
+  padding: 15px 0;
+}
+
 header .content-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
+    margin: 0;
+}
+header .divider{
+  width: 100%;
+  height: 1px;
+  margin: 10px 0 20px 0;
 }
 
 header nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    width: 60%;
 }
 
 header nav ul{
   display: flex;
   justify-content: space-around;
   align-items: center;
+  width: 100%;
+}
+
+footer .content-wrapper {
+  width: 55%;
+  margin: 50px 0;
 }
 
 footer .social-icons{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+  margin-bottom: 50px;
 }
 
 footer .social-icons p {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer .copyright {
+  margin-bottom: 10px;
 }
 
 /****************** Homepage Main Layout Styles ******************/
@@ -140,7 +171,13 @@ footer .social-icons p {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  width: 86%;
 }
+
+.hero .content-wrapper {
+  width: 100%;
+}
+
 
 /* Aside Area */
 
@@ -160,6 +197,22 @@ aside {
   align-items: center;
 }
 
+.features h2 {
+  margin-bottom: 30px;
+}
+
+.features article {
+  width: 63%;
+  margin: 30px 0;
+}
+.features-item-description {
+  margin-top: 35px;
+}
+ 
+.features p {
+  margin: 0;
+}
+
 /* Reviews Area */
 
 .reviews {
@@ -167,6 +220,15 @@ aside {
   justify-content: center;
   flex-flow: row wrap;
   align-items: center;
+}
+
+.reviews h2 {
+  margin-bottom: 25px;
+}
+
+.reviews h3{
+  width: 55%;
+  margin: 20px 0;
 }
 
 /****************** About Page Main Layout Styles ******************/
@@ -185,6 +247,10 @@ aside {
   align-items: center;
 }
 
+.contact-content p {
+  margin: 0;
+}
+
 /****************** FAQ Page Main Layout Styles ******************/
 
 .faq {
@@ -198,8 +264,16 @@ aside {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 50px 0 0 0;
 }
 
+.faq h2 {
+  margin-bottom: 40px;
+}
+
+.faq-content {
+  margin-bottom: 50px;
+}
 
 
 /*
