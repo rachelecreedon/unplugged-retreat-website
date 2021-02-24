@@ -115,8 +115,13 @@ header .content-wrapper {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
-    margin: 0 5%;
+    margin: 0;
 }
+
+/*header a {
+  max-width: 320px;
+} */
+
 header .divider{
   width: 100%;
   height: 1px;
@@ -146,11 +151,13 @@ footer .content-wrapper {
   margin: 50px 0;
 }
 
+footer .contact {
+  margin-bottom: 50px;
+}
 footer .social-icons{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 50px;
 }
 
 footer .social-icons p {
@@ -170,7 +177,7 @@ footer .copyright {
 /****************** Homepage Main Layout Styles ******************/
 
 
-/* Hero Area */
+/* Mobile Hero */
 
 .hero {
   display: flex;
@@ -180,7 +187,7 @@ footer .copyright {
  
 
 
-/* Aside Area */
+/* Mobile Aside */
 
 aside {
   display: flex;
@@ -189,7 +196,7 @@ aside {
   align-items: center;
 }
 
-/* Features Area */
+/* Mobile Features */
 
 .features {
   display: flex;
@@ -221,13 +228,13 @@ aside {
   margin: 0;
 }
 
-/* Reviews Area */
+/* Mobile Reviews */
 
 .reviews {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-  align-items: center;
+  
 }
 
 .reviews h2 {
@@ -239,7 +246,7 @@ aside {
   margin: 20px 0;
 }
 
-/****************** About Page Main Layout Styles ******************/
+/****************** Mobile About Page Main Layout Styles ******************/
 
 .mission {
   display: flex;
@@ -259,7 +266,7 @@ aside {
   margin: 0;
 }
 
-/****************** FAQ Page Main Layout Styles ******************/
+/****************** Mobile FAQ Page Main Layout Styles ******************/
 
 .faq {
   display: flex;
@@ -371,7 +378,8 @@ aside {
 
   .content-wrapper {
     margin: 100px 0;
-    width: 84%;
+    max-width: 640px;
+    /*width: 84%;*/
   }
 
 /*Tablet Header*/
@@ -507,7 +515,67 @@ footer .copyright {
 /* ==================== Desktop Styles =================== */
 
 @media only screen and (min-width: 1200px) {
-  /* Style adjustments for viewports that meet the condition */
+ 
+
+  .content-wrapper {
+    max-width:960px;
+    /*width: 90%;*/
+  }
+
+  /* Desktop Header */
+
+  /* Desktop Hero */
+
+  .hero h1 {
+    width:60%;
+  }
+  
+  /* Desktop Aside */
+
+  aside .content-wrapper {
+     justify-content: space-around;
+  }
+
+  aside .content-wrapper .form-description,
+  aside .content-wrapper .form {
+    width: 33%;
+  }
+
+   /* Desktop Features */
+
+   .features h2 {
+     width: 90%;
+   }
+
+   .features article {
+     flex-basis: 33%;
+   }
+
+   .features .features-item-description {
+    width: 62%;
+  }
+
+  /* Desktop Reviews */
+
+  .reviews article div {
+    width: 42%;
+  }
+
+  /**** About Page for Desktop ****/
+
+  .mission h2{
+    width: 90%;
+  }
+
+  .contact-section .content-wrapper h2 {
+      width: 95%;
+  }
+
+  /**** FAQ Page for Desktop ****/
+
+  .faq h2 {
+    width: 100%;
+  }
 }
 
 
