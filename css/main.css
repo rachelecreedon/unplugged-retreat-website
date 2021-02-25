@@ -100,6 +100,7 @@ html {
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 1em;
+  color: white;
 }
  
 ul, 
@@ -116,12 +117,15 @@ a {
  
 h2 {
   font-family: 'Poppins', sans-serif;
+  font-size: 1.875em;
+  font-weight: 500;
 }
  
 h3, 
 h4 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.125em;
+  font-weight: 500;
 }
  
 p {
@@ -155,6 +159,7 @@ address {
 
 header,
 footer {
+    background:#202322;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -162,7 +167,12 @@ footer {
 }
 
 header {
-  padding: 15px 0;
+  padding: 15px 0 0 0;
+}
+
+header img {
+  margin-left: 15%;
+  width:70%;
 }
 
 header .content-wrapper {
@@ -177,10 +187,11 @@ header .content-wrapper {
   max-width: 320px;
 } */
 
-header .divider{
+.header-divider{
+  background-color: #3a3a3a;
   width: 100%;
   height: 1px;
-  margin: 10px 0 20px 0;
+  margin: 10px 0 0 0;
 }
 
 header nav {
@@ -189,12 +200,15 @@ header nav {
     align-items: center;
     flex-flow: row wrap;
     width: 60%;
+    margin: 0;
 }
 
 header nav ul{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 100%;
+  padding: 0;
+
 }
 
 footer {
@@ -204,6 +218,17 @@ footer {
 footer .content-wrapper {
   width: 55%;
   margin: 50px 0;
+}
+
+footer .contact, footer .social, .footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.footer-content {
+  text-align: center;
 }
 
 footer .contact {
@@ -229,15 +254,24 @@ footer .copyright {
   margin-bottom: 10px;
 }
 
+
 /****************** Homepage Main Layout Styles ******************/
 
 
 /* Mobile Hero */
 
 .hero {
+  background-image: url('../img/jake-melara-30679-unsplash.jpg');
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  height: 500px;
+}
+
+h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.25em;
+  font-weight: 500;
 }
  
 
@@ -245,6 +279,7 @@ footer .copyright {
 /* Mobile Aside */
 
 aside {
+  background-color: #527158;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
@@ -254,6 +289,7 @@ aside {
 /* Mobile Features */
 
 .features {
+  background-image: url('../img/rawpixel-800820-unsplash1.jpg');
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
@@ -286,6 +322,7 @@ aside {
 /* Mobile Reviews */
 
 .reviews {
+  background-color: #2a423a;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
@@ -301,9 +338,35 @@ aside {
   margin: 20px 0;
 }
 
+aside .form {
+  margin-top: 30px;
+}
+ 
+input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
+  padding: 1em;
+}
+ 
+input[type=button] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
+}
 /****************** Mobile About Page Main Layout Styles ******************/
 
 .mission {
+  background-color: #527158;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
@@ -311,6 +374,7 @@ aside {
 }
 
 .contact-section {
+  background-color: #2a423a;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
@@ -324,6 +388,7 @@ aside {
 /****************** Mobile FAQ Page Main Layout Styles ******************/
 
 .faq {
+  background-color: #527158;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
