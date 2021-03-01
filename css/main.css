@@ -137,7 +137,7 @@ img {
 }
  
 figure {
-        margin: 0;
+  margin: 0;
 }
  
 address {
@@ -302,7 +302,7 @@ aside {
 }
 
 .features h2 {
-  margin-bottom: 30px;
+  margin-bottom: 60px;
 }
 
 
@@ -317,12 +317,19 @@ aside {
   width: 63%;
   margin: 30px 0;
 }
+
 .features-item-description {
   margin-top: 35px;
 }
  
 .features p {
+  text-align: center;
   margin: 0;
+}
+
+.features i {
+	font-size: 3.75em;
+  margin-bottom: 40px;
 }
 
 /* Mobile Reviews */
@@ -571,6 +578,7 @@ input[type=button] {
     justify-content: space-between;
     width: 100%;
   }
+
 /*Tablet Hero*/
 
 .hero {
@@ -608,7 +616,7 @@ input[type=button] {
   }
       
   .features h2 {
-    margin-bottom: 0px;
+    margin-bottom: 20px;
   }
   .features .features-item-description {
     width: 50%;
@@ -783,9 +791,9 @@ footer .copyright {
      flex-basis: 33%;
    }
 
-   .features .features-item-description {
+   /*.features .features-item-description {
     width: 62%;
-  }
+   } */
 
   /* Desktop Reviews */
 
