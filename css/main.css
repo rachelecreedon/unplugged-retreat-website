@@ -217,6 +217,7 @@ header nav ul{
 
 footer {
   flex-direction: column;
+  text-align: center;
 }
 
 footer .content-wrapper {
@@ -235,19 +236,29 @@ footer .contact, footer .social, .footer-content {
   text-align: center;
 }
 
-footer .contact {
+/*footer .contact {
   margin-bottom: 50px;
-}
+}*/
+
 footer .social-icons{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
+  width: 100%;
 }
 
 footer .social-icons p {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #527158;
+  border-radius: 20px;
+  height: 40px;
+  width: 40px;
+}
+
+footer .social-icons i {
+  font-size: 1.125em;
 }
 
 footer p {
@@ -645,7 +656,7 @@ input[type=button] {
 /* Tablet Footer */
 
 footer .content-wrapper {
-  width: 65%;
+  width: 80%;
   margin: 100px 0;
 }
 
@@ -653,17 +664,22 @@ footer .footer-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex: row wrap;
+  flex-direction: row;
 }
 
-footer .contact {
+footer .footer-content .contact {
   margin-bottom: 0;
-  width: 50%;
+  width: 49%;
 }
 
-footer .social {
-  width: 50%;
+footer .footer-content .social {
+  width: 49%;
+  margin-bottom: 0;
 }
+footer .footer-content {
+  width: 100%;
+}
+
 
 footer h3 {
   font-size: 1.5em;
@@ -673,6 +689,12 @@ footer h3 {
 footer p {
   line-height: 1.285;
 }
+
+footer .contact {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
 
 footer .copyright {
   width: 100%;
