@@ -236,6 +236,11 @@ footer .contact, footer .social, .footer-content {
   text-align: center;
 }
 
+footer .contact,
+footer .social {
+  width: 100%;
+}
+ 
 footer .contact {
   margin-bottom: 20px;
 }
@@ -318,7 +323,7 @@ aside .content-wrapper {
 
 .features h2 {
   margin-top: 0;
-  margin-bottom: 60px;
+  margin-bottom: 35px;
 }
 
 
@@ -402,6 +407,10 @@ input[type=button] {
   align-items: center;
 }
 
+.mission .content-wrapper h2 {
+  margin-top: 0;
+}
+
 .map figure {
     width: 100%;
     height: 0; 
@@ -426,6 +435,9 @@ input[type=button] {
   align-items: center;
 }
 
+.contact-section .content-wrapper h2 {
+  margin-top: 0;
+}
 .contact-content p {
   margin: 0;
 }
